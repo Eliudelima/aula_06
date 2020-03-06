@@ -1,0 +1,6 @@
+<h2>Meus discos:</h2>
+<div *ngFor="let disc of discs; index as index">
+  <a [routerLink]="['/discs', index]">
+  {{disc.title}}
+  </a>
+  </div>
